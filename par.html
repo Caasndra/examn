@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>verificador</h1>
+    <input type="number" id="numero" placeholder="Escribe un número">
+    <button onclick="verificar()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificar() {
+            let input = document.getElementById("numero").value;
+            let display = document.getElementById("resultado");
+
+            let numero  = parsefloat (input);
+            if (input === ""){
+                display.innerHTML = "Un numero pariente"
+                return;
+            }
+            let num = parseFloat (input);
+            let mensaje  = "";
+        }
+            if (num % 2=== 0 ) {
+                mensaje = "es par"
+        }  else  { 
+            mensaje = "es impar"
+        }
+    </script>
+
+</body>
+</html> 

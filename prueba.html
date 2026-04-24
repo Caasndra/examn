@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>verificador</h1>
+    <input type="number" id="numero" placeholder="Escribe un número">
+    <button onclick="verificar()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificar() {
+            let n = document.getElementById("numero").value;
+            let res = document.getElementById("resultado");
+
+            if (n == 0) {
+                res.innerText = "Es cero";
+            } else if (n > 0) {
+                res.innerText = "Es positivo";
+            } else {
+                res.innerText = "Es negativo";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
